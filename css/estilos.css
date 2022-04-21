@@ -1,0 +1,620 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  
+}
+
+.boddy{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 100;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+b{
+    font-size: 20px;
+}
+.titulo{
+    font-size: 50px;
+}
+.titulo--inicio{
+    margin: 3% 0% 1% 7%;
+}
+
+
+
+
+/* =================================================================== */
+/*          ESTILOS DE HEADER PARA TODAS LAS PAGINAS    */
+/* =================================================================== */
+.head{
+    font-size: 20px;
+    height: 130px;
+    background-position: center;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-size:auto;
+    font-weight: 900;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.233);    
+    display: grid;
+    grid-template-columns: 13fr 1fr;
+    grid-template-areas: 
+        "navegador logo"
+    ;
+}
+
+.head ul{
+    list-style: none;
+}
+.contenido_banner{
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "none none"
+    "empecemos empecemos";
+    background-image: url(../images/Banner.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: 0% 60%;
+
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.233);
+
+}
+/* ------------- MODIFICACIONES PARA  INICIO------------ */
+                .head--inicio{
+                    background-image: url(../images/bannerInicio.jpg);
+                    min-height: 90vh;
+                    color: rgb(252, 255, 255);
+                    text-shadow: 1px 1px 1px  #00a19ec8;
+                    background-position: 50% 20%;
+                    background-size: cover;
+                    background-repeat: none;
+                    display: grid;
+                    grid-template-columns: 13fr 1fr ;
+                    grid-template-rows: 2fr 1fr;
+                    grid-template-areas: 
+                      "navegador logo"
+                      "empecemos empecemos"
+                      ;
+                    
+                }
+                .head__box__empecemos{
+                    grid-area: empecemos ;
+                    align-self: center;
+                    color: rgb(252, 255, 255);
+                    text-shadow: 1px 1px 1px  #00a19ec8;
+                    padding: 3%;
+                }
+
+                .head__box__nav{
+                    margin-top: 35px;
+                    grid-area: navegador;
+                    height: 100%;
+                    width: 100%;
+                }
+                .head__box__logo{
+                    grid-area: logo;
+                }
+
+                
+                .head--inicio a{
+                    color: aliceblue;
+                    margin: 5px;
+                }
+            
+
+
+/* ------------------------ NAV DEL HEADER-------------------------- */
+                .head_nav{
+                    width: 100%;
+                    font-size: 25px;
+                    display: flex;
+                    flex-direction: row; 
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    text-decoration: none;
+                    align-items: center;
+                    text-decoration-color: black;
+                }
+                .head_nav__logo{
+                    margin-top: 10%;
+                    height: 100px;
+                }
+            
+
+
+
+
+    
+
+
+/* =================================================================== */
+/*          ESTILOS DE CONTENIDO PARA TODAS LAS PAGINAS   */
+/* =================================================================== */
+
+
+
+
+/* ------------- MODIFICACIONES PARA  NOTICIAS CURSOS Y BanerCursoInicio------------ */
+            .contenido__cursoInicio {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                margin-top: 4%;
+                flex-wrap: wrap;
+            }
+            .contenido--cursos{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                
+                
+            }
+            .contenido--noticias{
+                display: grid;
+                grid-template-columns: 1fr  1fr ;
+                grid-template-rows: 1fr  1fr ;
+            }
+            .contenido__boxCursos{
+                margin: 3%;
+                justify-self: center;
+                display: flex;
+                flex-direction: column;
+                align-self: center;
+                width: fit-content;
+                
+            }
+            .contenido__boxNoticias{
+                justify-self: center;
+                width: 60%;
+                align-items: center;   
+                padding: 3%; 
+            }
+            
+            .contenido__box__img{
+                width: 100%;
+            }
+            
+.contenido__cursoInicio div{
+    width: 300px;
+    height: 300px;
+}
+.contenido__cursoInicio__img{
+    width: 30%;
+}
+
+
+
+
+
+/* ------------- MODIFICACIONES PARA  NOSOTROS------------ */
+        .contenido--nosotros{
+            padding: 3%;
+            display: flexbox;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items:center;
+            justify-content: space-around;
+        }
+        .contenido__nosotros__foto{
+            width: 30%;
+        }
+        .contenido_parrafo{
+            width: 60%;
+        }
+
+
+/* ------------- MODIFICACIONES PARA  PREGUNTAS------------ */
+
+        .contenido__encuesta{
+            font-size: 20px;
+            padding: 5%;
+            
+        }
+        .contenido__encuesta__boxNombreEmail{
+            width: 100%;
+            display: flex;
+            justify-content: start;
+        }
+        .contenido__encuesta__boxNombreEmail__box{
+            width: 40vw;
+            margin: 2% 2% 2% 0%;
+
+            
+        }
+        .contenido__encuesta__textImput{
+            width: 100%;
+            margin: 2% 0% 2% 0%;
+            padding: 1%;
+        }
+
+        .contenido__encuesta__textImput--grande{
+            margin: 1% 1% 1% 0%;
+            width: 50%;
+
+        }
+
+        .contenido__preguntas{
+            list-style:square;
+            padding: 4%;
+        }
+        .contenido__preguntas li{
+            margin: 1%;
+        }
+
+
+
+
+/* =================================================================== */
+/*          ESTILOS DE PIE PARA TODAS LAS PAGINAS   */
+/* =================================================================== */
+
+.pie{
+    min-height: 50px;
+    background-color: #eeeeef;
+    margin-top: 7%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-justify: auto;
+    padding: 2%;
+    box-shadow: 0px 2px 6px 5px #142991b0;
+}
+.pie_redes, .pie_legales{
+    padding-left: 7%;
+}
+.pie_redes__links{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+
+
+
+
+/* =================================================================== */
+/*          ESTILOS DE BOTONES  */
+/* =================================================================== */
+
+.botton{
+    text-decoration: none;
+    width: fit-content;
+    height: fit-content;
+    padding: 1%;
+}
+.botton:hover{
+    font-size: 28px;
+    transition: all 0.5s;
+}
+.botton--INICIO:hover{
+    box-shadow: 0px 5px 5px rgba(168, 217, 223, 0.751);
+    
+}
+
+.botton--nav{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    
+}
+
+/* ------------- MODIFICACIONES PARA BOTONES DE REDES SOCICALES (PIE) ------------ */
+            .botton--foto{
+                background-repeat:no-repeat;
+                height:60px;
+                width: 60px;
+                margin: 5px;
+                background-position:center;
+                background-size: 70%;
+                margin: 10px;
+                background-color: rgb(255, 255, 255);
+                border-radius: 50%;
+            }
+            .botton--foto:hover{
+                box-shadow: 0px 10px 8px rgba(168, 217, 223, 0.751);
+                transition: all 0.4s;
+                height:70px;
+                width: 70px;
+            }
+/* ------------- MODIFICACIONES PARA BOTONES DE CURSOS------------ */
+            .botton--curso{
+                height:30vh;
+                width: 25vw;
+                background-color: antiquewhite;
+                background-repeat:no-repeat;
+                background-position:center;
+                background-size:cover; 
+            }
+            .botton--curso:hover{
+                box-shadow: 0px 12px 5px rgba(168, 217, 223, 0.751);
+                width: 28vw;
+                transition: all 0.6s;
+            }
+            .botton--cursoD3DI{
+                background-image: url(../images/fusion-360-curso-principiantes.jpg);
+                
+            }
+            .botton--cursoD3DA{
+                background-image: url(../images/CursoFUSIONavanzado.jpg);
+            }
+            .botton--cursoUI3DI{
+                background-image: url(../images/impresion-3d-faqs.jpg);
+
+            }
+            .botton--cursoUI3DA{
+                background-image: url(../images/CursoMARLIN.jpg);
+            }
+            .botton--cursoUI3DR{
+                background-image: url(../images/Curso-de-resina-banner.jpg);
+            }
+            .botton--cursoUI3DE{
+                background-image: url(../images/CursoArmadoImpresora.jpg);
+            }
+
+/* ------------- MODIFICACIONES PARA BOTON DE CONTACTO EN PAGINA PREGUNTAS ------------ */
+.botton_contacto{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    min-width: 15%;
+    height: 50px;
+    background-color: #00A19D;
+    padding: 2%;
+    border-radius: 4%;
+    box-shadow: 2px 5px 5px rgba(57, 57, 128, 0.751);
+    margin-left: 5%;  
+}
+
+
+
+.botton_contacto a{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    text-justify: distribute;
+}
+/* ------------- MODIFICACIONES PARA BOTON A CURSOS (HEADER DEL INICIO) ------------ */
+.botton--empecemos{
+    background-color: #00A19D;
+    height: fit-content;
+    width: fit-content;
+    text-align: center;
+    text-justify: distribute;
+    padding: 2%;
+    border-radius: 4%;
+    box-shadow: 0px 5px 5px rgba(57, 57, 128, 0.751);
+    margin-left: 1%;
+}
+.botton--empecemos:hover{
+    font-size: 30px;
+    transition: all 0.4s;
+}
+
+
+
+.botton--instagram{
+    background-image: url(../images/instagram-01.png);
+}
+.botton--facebook{
+    background-image: url(../images/FACEBOOK-01.png);
+}
+
+.botton--inicio{
+    background-image: url(../images/LOGO.png);
+}
+.botton--youtube{
+    background-image: url(../images/wpp-01.png);
+}
+.contenido_banner .head__box__logo, .fa-solid{
+    display: none ;
+}
+
+ .botton-cruz{ 
+    display:none ;
+}
+a .fa-bars{
+    display: none;
+}
+
+
+
+
+
+@media screen and (max-width:1023px) {
+    
+    .contenido_banner .head__box__logo, .contenido_banner .bottonSideBar,.botton-cruz {
+        display: block;
+    }
+    a .fa-bars{
+        display: block;
+    }
+
+
+   
+    /* =========================BANER PARA TODAS LAS PAGINAS MENOS EL INDEX============================== */
+            .contenido_banner{
+                height: 50vh;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas: 
+                "sideBut logo"
+                "empecemos empecemos";
+                background-image: url(../images/Banner.jpg);
+                background-repeat: none;
+                background-size: cover;
+                background-position: 57% 60%;
+                box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.233);
+            }
+            .head_nav{
+                display: flex;
+                height: 80vh;
+                justify-self: space-around;
+                flex-direction: column;
+                align-items: baseline;
+                margin-top: 30% ;
+                
+            }
+            .head_nav a{
+                color: black; 
+            }
+
+
+    /* =========================SIDE BAR PARA TODAS LAS PAGINAS============================== */   
+            .botton__sideBar{
+                grid-area: sideBut;
+            }
+
+            .contenido_banner .head__box__logo{
+                grid-area: logo;
+                justify-self: end;
+            }   
+            #BAR{
+                height: 100vh;
+                min-width: 30vh;
+                max-width: 40vh;
+                position: fixed;
+                background-color: #eeeeef;
+                display: flex;
+                flex-direction: column;
+                transform: translateX(-150%);
+                transition: all 0,5s;
+            }
+            #BAR:target{
+                transform: translateX(0%);
+                transition: all 0.5s;
+            }
+
+    /* =========================BANER PARA TODAS LAS PAGINAS============================== */      
+            .head .head__box__logo{
+                display: none;
+            }
+            #head__box__logo--INDEX{
+                display: block;
+            }
+            nav .botton{
+                padding: 10%;
+            }
+            nav .botton:hover{
+                border-left: 5px solid rgb(198, 237, 249);
+                box-shadow: none;
+            }
+            .fa-bars, .fa-solid {
+                display:block;  
+                font-size: 70px;
+                margin: 5%;     
+            }
+    
+    /* =========================HEAD UNICAMENTE PARA EL INDEX============================== */
+    .head--inicio{
+        min-height: 50vh;
+        display: grid;
+        grid-template-areas: 
+        "none logo"
+        "empecemos empecemos"
+        ;  
+    }
+    .head__box__nav{
+    
+        position:fixed;
+        width: fit-content;
+        height: auto;
+        text-shadow: none;
+        top: 0%; 
+        margin-top: 0%;
+
+    }
+
+     /* =========================MODIFICACIONES PARA LOS PIE DE TODAS LAS PAGINAS============================== */   
+                .pie{
+                    display: flex;
+                    flex-direction: column;
+                }
+                .pie_redes, .pie_legales{
+                    padding-top: 7%;
+                }
+    
+
+
+    
+
+    /* =========================MODIFICACIONES PARA NOTICIAS DEL INDEX (PASA A SER UNICA COLUMNA)============================== */            
+                .contenido--noticias{
+                    grid-template-columns: 1fr ;
+                    grid-template-rows: repeat(1fr,4) ;
+                }
+                .contenido__boxNoticias{
+                    
+                    width: 70%;
+                    align-items: center;   
+                margin-bottom: 6%;
+                }
+
+    /* =========================MODIFICACIONES PARA CURSOS (PASA A SER UNICA COLUMNA)============================== */    
+                .contenido--cursosBox {
+                    display: none;
+                }
+                .contenido__boxCursos{
+                    margin: 5%;
+                }
+                .contenido--cursos{
+                    display: grid;
+                    grid-template-columns: 1fr ;
+                    grid-template-rows: repeat(1fr,6);
+                }
+                .botton--curso{
+                    height:30vh;
+                    width: 60vw;
+                }
+                .botton--curso:hover{
+                    box-shadow: 0px 12px 5px rgba(168, 217, 223, 0.751);
+                    width: 65vw;
+                    transition: all 0.6s;
+                }
+
+    /* =========================MODIFICACIONES PARA CURSOS (PASA A SER COLUMNA)============================== */    
+                .contenido--nosotros{
+                    flex-direction: column;
+                }
+                
+                .contenido_parrafo {
+                    width: 100%;
+                }
+    /* =========================MODIFICACIONES PARA PREGUNTAS (CAMBIA ALGUNOS ANCHOS)============================== */    
+                .contenido__encuesta__boxNombreEmail{
+                    display: block;
+                }
+                .contenido__encuesta__textImput{
+                    width: 80vw;
+                    
+                }
+                .contenido__encuesta__textImput--grande{
+                    width: 100%;
+
+                }
+
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+

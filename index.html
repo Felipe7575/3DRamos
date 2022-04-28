@@ -5,7 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio - Todo3dRamos </title>
+    
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- Estilos propios -->
     <link rel="stylesheet" href="css/estilos.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,300;0,400;0,600;1,800&display=swap" rel="stylesheet">
@@ -19,6 +25,10 @@
 
     <header class="head  head--inicio"> <!------ Inicio del header ------>
         
+        
+
+
+
                 
         <a boton="botton__sideBar" href="#BAR" ><i class="fa-solid fa-bars"></i></a>
         
@@ -54,49 +64,77 @@
 
     
     <main>
-
-        <section class="contenido contenido--cursosBox">  <!----- Cursos  ------->
-
+        <div class="container container--carousel ">
             <h1 class="titulo titulo--inicio">Cursos 2022</h1>
-            <div class="contenido__cursoInicio">
-                 <!-- La idea es remplazar la foto por un menu que deslice las fotos (Lo dejo expresado con una foto generica)  -->
-                 <img class="contenido__cursoInicio__img" src="/images/Curso-de-resina-banner.jpg" alt="">
-                 <img class="contenido__cursoInicio__img" src="/images/fusion-360-curso-principiantes.jpg" alt="">
-                 <img class="contenido__cursoInicio__img" src="/images/CursoArmadoImpresora.jpg" alt="">
-            </div>
-        </section> <!----- Fin de Cursos  ------>
-        <br>                                                                             <!-- BORRAR -->
-        
-        <section class="contenido">  <!-------Noticias ------>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/images/CursoArmadoImpresora.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>First slide label</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/images/fusion-360-curso-principiantes.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/images/Curso-de-resina-banner.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>  
+       
+        <section class="container mx-auto">  <!-------Noticias ------>
             <h1 class="titulo titulo--inicio" >Noticias</h1>
-            <div class="contenido--noticias">
-                <div class="contenido__boxNoticias">  <!-- Nota 1 -->
-                    <img class="contenido__box__img" src="/images/Nota1.PNG" alt="" >                        <!-- BORRAR HEIGHT-->
-                    <h3>Las impresoras 3D de resina para el sector dental</h3>
-                    <p>La industria dental es uno de los sectores que utiliza la fabricación aditiva para ofrecer dispositivos personalizados, adaptados a cada paciente. A partir de un escaneado 3D o de datos de imágenes médicas, los profesionales dentales pueden obtener modelos 3D….</p>
-                </div> <!-- Nota 1 -->
+            <div class="container  d-flex justify-content-between ">
+                <div class="row gx-5 gy-5">
+                    <div class="col-md-5  col-xs-12  ">
+                        <img class="contenido__box__img" src="/images/Nota1.PNG" alt="" >                        <!-- BORRAR HEIGHT-->
+                        <h3>Las impresoras 3D de resina para el sector dental</h3>
+                        <p>La industria dental es uno de los sectores que utiliza la fabricación aditiva para ofrecer dispositivos personalizados, adaptados a cada paciente. A partir de un escaneado 3D o de datos de imágenes médicas, los profesionales dentales pueden obtener modelos 3D….</p>
+                    </div>
+                    <div class="col-md-5 col-xs-12">
+                        <img class="contenido__box__img" src="/images/Nota2.png" alt="" >                        <!-- BORRAR HEIGHT--> 
+                        <h3>Lab 3Dnatives: Test de la impresora 3D Sigma D25, de BCN3D</h3>
+                        <p>Fundada en 2012 por tres estudiantes de la Universidad Politécnica de Cataluña, la empresa BCN3D se ha convertido con el paso de los años en uno de los actores clave del mercado de la impresión 3D FDM. Históricamente dedicada a…</p>
+                    </div>
+                    <div class="col-md-5 col-xs-12 ">
+                        <img class="contenido__box__img" src="/images/Nota3.jpeg" alt="" >                        <!-- BORRAR HEIGHT-->
+                        <h3>3DGence lanza una serie de impresoras 3D FFF de metal</h3>
+                        <p>A pesar del continuo dominio de los polímeros en la fabricación aditiva, la impresión 3D de metal también ha aumentado significativamente en los últimos años con una tasa de crecimiento más rápida que muchos otros segmentos de productos en la…</p>
+                    </div>
+                    <div class="col-md-5 col-xs-12">
+                        <img class="contenido__box__img" src="/images/Nota4.PNG" alt="">                        <!-- BORRAR HEIGHT-->
+                        <h3>3DGence y la impresión 3D de alto rendimiento para procesos fiables y repetibles</h3>
+                        <p>El fabricante europeo 3DGence ha anunciado el lanzamiento de una nueva máquina FFF industrial compatible con materiales de alto rendimiento. Llamada INDUSTRY F421, esta impresora 3D se une a la gama de productos de la empresa, que busca satisfacer las…</p>
+                    </div>
 
-                <div class="contenido__boxNoticias">  <!-- Nota 2 -->
-                    <img class="contenido__box__img" src="/images/Nota2.png" alt="" >                        <!-- BORRAR HEIGHT--> 
-                    <h3>Lab 3Dnatives: Test de la impresora 3D Sigma D25, de BCN3D</h3>
-                    <p>Fundada en 2012 por tres estudiantes de la Universidad Politécnica de Cataluña, la empresa BCN3D se ha convertido con el paso de los años en uno de los actores clave del mercado de la impresión 3D FDM. Históricamente dedicada a…</p>
-                </div> <!-- Nota 2 -->
+                </div>
 
-                <div class="contenido__boxNoticias">  <!-- Nota 3 -->
-                    <img class="contenido__box__img" src="/images/Nota3.jpeg" alt="" >                        <!-- BORRAR HEIGHT-->
-                    <h3>3DGence lanza una serie de impresoras 3D FFF de metal</h3>
-                    <p>A pesar del continuo dominio de los polímeros en la fabricación aditiva, la impresión 3D de metal también ha aumentado significativamente en los últimos años con una tasa de crecimiento más rápida que muchos otros segmentos de productos en la…</p>
-                </div> <!-- Nota 3 -->
-
-                <div class="contenido__boxNoticias">  <!-- Nota 4 -->
-                    <img class="contenido__box__img" src="/images/Nota4.PNG" alt="">                        <!-- BORRAR HEIGHT-->
-                    <h3>3DGence y la impresión 3D de alto rendimiento para procesos fiables y repetibles</h3>
-                    <p>El fabricante europeo 3DGence ha anunciado el lanzamiento de una nueva máquina FFF industrial compatible con materiales de alto rendimiento. Llamada INDUSTRY F421, esta impresora 3D se une a la gama de productos de la empresa, que busca satisfacer las…</p>
-                </div> <!-- Nota 4 -->
             </div>
-            
-
-        </section> <!-------Noticias ------>
+    </section> <!-------Noticias ------>
         
     </main> <!------ Cierre del main ------>
 

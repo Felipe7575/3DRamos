@@ -8,15 +8,18 @@
 .boddy{
     font-family: 'Kanit', sans-serif;
     font-weight: 100;
-    
 }
 
 a{
     text-decoration: none;
     color: black;
+    
 }
 b{
-    font-size: 20px;
+    font-size: 30px;
+}
+p{
+    font-size: 30px;
 }
 .titulo{
     font-size: 50px;
@@ -27,12 +30,11 @@ b{
 
 
 
-
 /* =================================================================== */
 /*          ESTILOS DE HEADER PARA TODAS LAS PAGINAS    */
 /* =================================================================== */
 .head{
-    font-size: 20px;
+    font-size: 30px;
     height: 130px;
     background-position: center;
     background-size: 100%;
@@ -157,10 +159,8 @@ b{
                 
                 
             }
-            .contenido--noticias{
-                display: grid;
-                grid-template-columns: 1fr  1fr ;
-                grid-template-rows: 1fr  1fr ;
+            .Noticias{
+                width: max-content;
             }
             .contenido__boxCursos{
                 margin: 3%;
@@ -492,6 +492,7 @@ a .fa-bars{
                 flex-direction: column;
                 transform: translateX(-150%);
                 transition: all 0,5s;
+                z-index: 1;
             }
             #BAR:target{
                 transform: translateX(0%);
@@ -526,6 +527,7 @@ a .fa-bars{
         "none logo"
         "empecemos empecemos"
         ;  
+        z-index: 1;
     }
     .head__box__nav{
     
@@ -546,23 +548,6 @@ a .fa-bars{
                 .pie_redes, .pie_legales{
                     padding-top: 7%;
                 }
-    
-
-
-    
-
-    /* =========================MODIFICACIONES PARA NOTICIAS DEL INDEX (PASA A SER UNICA COLUMNA)============================== */            
-                .contenido--noticias{
-                    grid-template-columns: 1fr ;
-                    grid-template-rows: repeat(1fr,4) ;
-                }
-                .contenido__boxNoticias{
-                    
-                    width: 70%;
-                    align-items: center;   
-                margin-bottom: 6%;
-                }
-
     /* =========================MODIFICACIONES PARA CURSOS (PASA A SER UNICA COLUMNA)============================== */    
                 .contenido--cursosBox {
                     display: none;

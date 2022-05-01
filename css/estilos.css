@@ -9,7 +9,16 @@
     font-family: 'Kanit', sans-serif;
     font-weight: 100;
 }
+.header {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
+}
 
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+}
 a{
     text-decoration: none;
     color: black;
@@ -27,6 +36,7 @@ p{
 .titulo--inicio{
     margin: 3% 0% 1% 7%;
 }
+
 
 
 
@@ -141,116 +151,10 @@ p{
 /* =================================================================== */
 
 
-
-
-/* ------------- MODIFICACIONES PARA  NOTICIAS CURSOS Y BanerCursoInicio------------ */
-            .contenido__cursoInicio {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-                align-items: center;
-                margin-top: 4%;
-                flex-wrap: wrap;
-            }
-            .contenido--cursos{
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                
-                
-            }
-            .Noticias{
-                width: max-content;
-            }
-            .contenido__boxCursos{
-                margin: 3%;
-                justify-self: center;
-                display: flex;
-                flex-direction: column;
-                align-self: center;
-                width: fit-content;
-                
-            }
-            .contenido__boxNoticias{
-                justify-self: center;
-                width: 60%;
-                align-items: center;   
-                padding: 3%; 
-            }
-            
-            .contenido__box__img{
-                width: 100%;
-            }
-            
-.contenido__cursoInicio div{
-    width: 300px;
-    height: 300px;
-}
-.contenido__cursoInicio__img{
-    width: 30%;
-}
-
-
-
-
-
 /* ------------- MODIFICACIONES PARA  NOSOTROS------------ */
-        .contenido--nosotros{
-            padding: 3%;
-            display: flexbox;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-items:center;
-            justify-content: space-around;
-        }
-        .contenido__nosotros__foto{
-            width: 30%;
-        }
-        .contenido_parrafo{
-            width: 60%;
-        }
-
+       
 
 /* ------------- MODIFICACIONES PARA  PREGUNTAS------------ */
-
-        .contenido__encuesta{
-            font-size: 20px;
-            padding: 5%;
-            
-        }
-        .contenido__encuesta__boxNombreEmail{
-            width: 100%;
-            display: flex;
-            justify-content: start;
-        }
-        .contenido__encuesta__boxNombreEmail__box{
-            width: 40vw;
-            margin: 2% 2% 2% 0%;
-
-            
-        }
-        .contenido__encuesta__textImput{
-            width: 100%;
-            margin: 2% 0% 2% 0%;
-            padding: 1%;
-        }
-
-        .contenido__encuesta__textImput--grande{
-            margin: 1% 1% 1% 0%;
-            width: 50%;
-
-        }
-
-        .contenido__preguntas{
-            list-style:square;
-            padding: 4%;
-        }
-        .contenido__preguntas li{
-            margin: 1%;
-        }
-
-
 
 
 /* =================================================================== */
@@ -327,39 +231,9 @@ p{
                 width: 70px;
             }
 /* ------------- MODIFICACIONES PARA BOTONES DE CURSOS------------ */
-            .botton--curso{
-                height:30vh;
-                width: 25vw;
-                background-color: antiquewhite;
-                background-repeat:no-repeat;
-                background-position:center;
-                background-size:cover; 
-            }
-            .botton--curso:hover{
-                box-shadow: 0px 12px 5px rgba(168, 217, 223, 0.751);
-                width: 28vw;
-                transition: all 0.6s;
-            }
-            .botton--cursoD3DI{
-                background-image: url(../images/fusion-360-curso-principiantes.jpg);
-                
-            }
-            .botton--cursoD3DA{
-                background-image: url(../images/CursoFUSIONavanzado.jpg);
-            }
-            .botton--cursoUI3DI{
-                background-image: url(../images/impresion-3d-faqs.jpg);
-
-            }
-            .botton--cursoUI3DA{
-                background-image: url(../images/CursoMARLIN.jpg);
-            }
-            .botton--cursoUI3DR{
-                background-image: url(../images/Curso-de-resina-banner.jpg);
-            }
-            .botton--cursoUI3DE{
-                background-image: url(../images/CursoArmadoImpresora.jpg);
-            }
+       .card:hover{
+            background-color: #35a39c25;
+       }
 
 /* ------------- MODIFICACIONES PARA BOTON DE CONTACTO EN PAGINA PREGUNTAS ------------ */
 .botton_contacto{
@@ -377,8 +251,6 @@ p{
     box-shadow: 2px 5px 5px rgba(57, 57, 128, 0.751);
     margin-left: 5%;  
 }
-
-
 
 .botton_contacto a{
     width: 100%;
@@ -548,52 +420,7 @@ a .fa-bars{
                 .pie_redes, .pie_legales{
                     padding-top: 7%;
                 }
-    /* =========================MODIFICACIONES PARA CURSOS (PASA A SER UNICA COLUMNA)============================== */    
-                .contenido--cursosBox {
-                    display: none;
-                }
-                .contenido__boxCursos{
-                    margin: 5%;
-                }
-                .contenido--cursos{
-                    display: grid;
-                    grid-template-columns: 1fr ;
-                    grid-template-rows: repeat(1fr,6);
-                }
-                .botton--curso{
-                    height:30vh;
-                    width: 60vw;
-                }
-                .botton--curso:hover{
-                    box-shadow: 0px 12px 5px rgba(168, 217, 223, 0.751);
-                    width: 65vw;
-                    transition: all 0.6s;
-                }
-
-    /* =========================MODIFICACIONES PARA CURSOS (PASA A SER COLUMNA)============================== */    
-                .contenido--nosotros{
-                    flex-direction: column;
-                }
-                
-                .contenido_parrafo {
-                    width: 100%;
-                }
-    /* =========================MODIFICACIONES PARA PREGUNTAS (CAMBIA ALGUNOS ANCHOS)============================== */    
-                .contenido__encuesta__boxNombreEmail{
-                    display: block;
-                }
-                .contenido__encuesta__textImput{
-                    width: 80vw;
-                    
-                }
-                .contenido__encuesta__textImput--grande{
-                    width: 100%;
-
-                }
-
-    
-    
-    
+     
 }
 
 

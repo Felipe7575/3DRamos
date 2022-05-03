@@ -200,13 +200,12 @@ p{
     width: fit-content;
     height: fit-content;
     padding: 1%;
-   
-}
-.botton--INICIO:hover{
-    box-shadow: 0px 5px 5px rgba(168, 217, 223, 0.751);
     
 }
 
+.botton--INICIO:hover{
+    box-shadow: 0px 5px 5px rgba(168, 217, 223, 0.751);
+}  
 
 .botton--nav{
     width: 100px;
@@ -226,13 +225,15 @@ p{
                 margin: 10px;
                 background-color: rgb(255, 255, 255);
                 border-radius: 50%;
-            }
-            .botton--foto:hover{
+
+                &.botton--foto:hover{
                 box-shadow: 0px 10px 8px rgba(168, 217, 223, 0.751);
                 transition: all 0.4s;
                 height:70px;
                 width: 70px;
+                }
             }
+            
 /* ------------- MODIFICACIONES PARA BOTONES DE CURSOS------------ */
        .card:hover{
             background-color: #35a39c25;
@@ -278,17 +279,14 @@ p{
     margin-left: 1%;
     font-size: 20px;
     font-weight: bold;  
+        a{
+            color: rgba(240, 248, 255, 0.905);
+        }
+        &:hover{
+            font-size: 25px;
+            transition: all 0.4s;
+        }
 }
-
-.botton--empecemos a{
-    color: rgba(240, 248, 255, 0.905);
-}
-
-.botton--empecemos:hover{
-    font-size: 30px;
-    transition: all 0.4s;
-}
-
 
 
 .botton--instagram{

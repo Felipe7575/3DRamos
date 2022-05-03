@@ -1,0 +1,22 @@
+{
+  "name": "root",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass style.scss ./css/estilos.css -w --no-source-map -s compressed"
+
+
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Felipe7575/3DRamos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Felipe7575/3DRamos/issues"
+  },
+  "homepage": "https://github.com/Felipe7575/3DRamos#readme"
+}

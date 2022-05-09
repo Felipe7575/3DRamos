@@ -1,0 +1,118 @@
+
+
+
+/* =================================================================== */
+/*          ESTILOS DE HEADER PARA TODAS LAS PAGINAS    */
+/* =================================================================== */
+.head{
+    font-size: 30px;
+    height: 130px;
+    background-position: center;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-size:auto;
+    font-weight: 900;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.233);    
+    display: grid;
+    grid-template-columns: 13fr 1fr;
+    grid-template-areas: 
+        "navegador logo"
+    ;
+}
+
+.head ul{
+    list-style: none;
+}
+.contenido_banner{
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "none none"
+    "empecemos empecemos";
+    background-image: url(../images/Banner.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: 0% 60%;
+
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.233);
+
+}
+/* ------------- MODIFICACIONES PARA  INICIO------------ */
+                .head--inicio{
+                    background-image: url(../images/bannerInicio.jpg);
+                    min-height: 90vh;
+                    color: rgb(252, 255, 255);
+                    text-shadow: 1px 1px 1px  $CelesteTrans;
+                    background-position: 50% 20%;
+                    background-size: cover;
+                    background-repeat: none;
+                    display: grid;
+                    grid-template-columns: 13fr 1fr ;
+                    grid-template-rows: 2fr 1fr;
+                    grid-template-areas: 
+                      "navegador logo"
+                      "empecemos empecemos"
+                      ;
+                    
+                }
+                .head__box__empecemos{
+                    grid-area: empecemos ;
+                    align-self: center;
+                    color: rgb(252, 255, 255);
+                    text-shadow: 1px 1px 1px  $CelesteTrans;
+                    padding: 3%;
+                    
+                }
+
+                .head__box__nav{
+                    margin-top: 35px;
+                    grid-area: navegador;
+                    height: 100%;
+                    width: 100%;
+                }
+                .head__box__logo{
+                    grid-area: logo;
+                }
+
+                
+                .head--inicio a{
+                    color: aliceblue;
+                    margin: 5px;
+                }
+            
+
+
+/* ------------------------ NAV DEL HEADER-------------------------- */
+                .head_nav{
+                    width: 100%;
+                    font-size: $SizeFontNav;  
+                    display: flex;
+                    flex-direction: row; 
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    text-decoration: none;
+                    align-items: center;
+                    text-decoration-color: black;
+                }
+                .head_nav__logo{
+                    margin-top: 10%;
+                    height: 100px;
+                }
+            
+
+
+           
+
+
+
+
+
+
+
+
+
+
+
+

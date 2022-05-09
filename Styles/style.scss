@@ -1,0 +1,42 @@
+@import './var';
+@import './iniciacion';
+@import './botton';
+@import './footer';
+@import './header';
+@import './media';
+
+// COLOR Y TAMAÑO DE LOS ICONOS DE LA PAGINA DE CONTACTO
+    .bigicon {
+        font-size: 35px;
+        color: $Celeste;
+    }
+
+
+a{
+    font-family: 'Kanit', sans-serif;
+    text-decoration: none;
+    color: black;
+    
+}
+b{
+    font-family: 'Kanit', sans-serif;
+    font-size: 30px;
+}
+p{
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+}
+.titulo{
+    font-family: 'Kanit', sans-serif;
+    font-size: 50px;
+}
+.titulo--inicio{
+    margin: 3% 0% 1% 7%;
+}
+
+.contenido_banner a{
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px rgb(0 161 158 / 78%);
+}
+
+

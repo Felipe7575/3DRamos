@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "sass style.scss ./css/estilos.css -w --no-source-map -s compressed"
+    "start": "sass ./Styles/style.scss ./css/estilos.css -w --no-source-map -s compressed"
 
 
   },

@@ -1,0 +1,127 @@
+
+@media screen and (max-width:1023px) {
+    
+    .contenido_banner .head__box__logo, .contenido_banner .bottonSideBar,.botton-cruz {
+        display: block;
+    }
+    a .fa-bars{
+        display: block;
+    }
+
+
+   
+    /* =========================BANER PARA TODAS LAS PAGINAS MENOS EL INDEX============================== */
+            .contenido_banner{
+                height: 50vh;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas: 
+                "sideBut logo"
+                "empecemos empecemos";
+                background-image: url(../images/Banner.jpg);
+                background-repeat: none;
+                background-size: cover;
+                background-position: 57% 60%;
+                box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.233);
+            }
+            .head_nav{
+                display: flex;
+                height: 80vh;
+                justify-self: space-around;
+                flex-direction: column;
+                align-items: baseline;
+                margin-top: 30% ;
+                
+            }
+            .head_nav a{
+                color: black; 
+            }
+
+
+    /* =========================SIDE BAR PARA TODAS LAS PAGINAS============================== */   
+            .botton__sideBar{
+                grid-area: sideBut;
+            }
+
+            .contenido_banner .head__box__logo{
+                grid-area: logo;
+                justify-self: end;
+            }   
+            #BAR{
+                height: 100vh;
+                min-width: 30vh;
+                max-width: 40vh;
+                position: fixed;
+                background-color: #eeeeef;
+                display: flex;
+                flex-direction: column;
+                transform: translateX(-150%);
+                transition: all 0,5s;
+                z-index: 1;
+            }
+            #BAR:target{
+                transform: translateX(0%);
+                transition: all 0.5s;
+            }
+
+    /* =========================BANER PARA TODAS LAS PAGINAS============================== */      
+            .head .head__box__logo{
+                display: none;
+            }
+            #head__box__logo--INDEX{
+                display: block;
+            }
+            nav .botton{
+                padding: 10%;
+            }
+            nav .botton:hover{
+                border-left: 5px solid rgb(198, 237, 249);
+                box-shadow: none;
+            }
+            .fa-bars, .fa-solid {
+                display:block;  
+                font-size: 70px;
+                margin: 5%;     
+            }
+    
+    /* =========================HEAD UNICAMENTE PARA EL INDEX============================== */
+    .head--inicio{
+        min-height: 50vh;
+        display: grid;
+        grid-template-areas: 
+        "none logo"
+        "empecemos empecemos"
+        ;  
+        z-index: 1;
+    }
+    .head__box__nav{
+    
+        position:fixed;
+        width: fit-content;
+        height: auto;
+        text-shadow: none;
+        top: 0%; 
+        margin-top: 0%;
+
+    }
+
+     /* =========================MODIFICACIONES PARA LOS PIE DE TODAS LAS PAGINAS============================== */   
+                .pie{
+                    display: flex;
+                    flex-direction: column;
+                }
+                .pie_redes, .pie_legales{
+                    padding-top: 7%;
+                }
+     
+}
+
+
+
+
+
+
+
+
+

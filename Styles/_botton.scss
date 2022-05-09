@@ -1,0 +1,103 @@
+/* =================================================================== */
+/*          ESTILOS DE BOTONES  */
+/* =================================================================== */
+
+.botton{
+    text-decoration: none;
+    width: fit-content;
+    height: fit-content;
+    padding: 1%;
+    
+}
+
+.botton--INICIO:hover{
+    box-shadow: 0px 5px 5px rgba(168, 217, 223, 0.751);
+}  
+
+.botton--nav{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    
+}
+
+/* ------------- MODIFICACIONES PARA BOTONES DE REDES SOCICALES (PIE) ------------ */
+            .botton--foto{
+                background-repeat:no-repeat;
+                height:60px;
+                width: 60px;
+                margin: 5px;
+                background-position:center;
+                background-size: 70%;
+                margin: 10px;
+                background-color: rgb(255, 255, 255);
+                border-radius: 50%;
+
+                &.botton--foto:hover{
+                box-shadow: 0px 10px 8px rgba(168, 217, 223, 0.751);
+                transition: all 0.4s;
+                height:70px;
+                width: 70px;
+                }
+            }
+            
+/* ------------- MODIFICACIONES PARA BOTONES DE CURSOS------------ */
+       .card:hover{
+            background-color: #35a39c25;
+       }
+
+
+
+@mixin botton ($fontSize) {
+    background-color:  $Celeste; 
+    height: fit-content;
+    width: fit-content;
+    text-align: center;
+    text-justify: distribute;
+    padding: 2%;
+    border-radius: 4%;
+    box-shadow: 0px 5px 5px $AzulOscuro;
+    margin-left: 1%;
+    font-size: 20px;
+    font-weight: bold;  
+        a{
+            color: rgba(240, 248, 255, 0.905);
+        }
+        &:hover{
+            font-size: $fontSize;
+            transition: all 0.4s;
+        }
+}
+
+.contenido_banner .head__box__logo, .fa-solid{
+    display: none ;
+}
+
+ .botton-cruz{ 
+    display:none ;
+}
+a .fa-bars{
+    display: none;
+}
+
+
+/* ------------- MODIFICACIONES PARA BOTON DE CONTACTO EN PAGINA PREGUNTAS ------------ */
+.botton_contacto{
+    @include botton (22px);
+}
+
+
+/* ------------- MODIFICACIONES PARA BOTON A CURSOS (HEADER DEL INICIO) ------------ */
+.botton--empecemos{
+   @include botton (25px);
+}
+
+
+
+
+
+
+
+
+
+

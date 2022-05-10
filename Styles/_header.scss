@@ -31,7 +31,7 @@
     grid-template-areas: 
     "none none"
     "empecemos empecemos";
-    background-image: url(../images/Banner.jpg);
+    background-image: url(../assets/images/Banner.jpg);
     background-repeat: none;
     background-size: cover;
     background-position: 0% 60%;
@@ -41,7 +41,7 @@
 }
 /* ------------- MODIFICACIONES PARA  INICIO------------ */
                 .head--inicio{
-                    background-image: url(../images/bannerInicio.jpg);
+                    background-image: url(../assets/images/bannerInicio.jpg);
                     min-height: 90vh;
                     color: rgb(252, 255, 255);
                     text-shadow: 1px 1px 1px  $CelesteTrans;

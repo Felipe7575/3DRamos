@@ -87,14 +87,21 @@
     
     /* =========================HEAD UNICAMENTE PARA EL INDEX============================== */
     .head--inicio{
-        min-height: 50vh;
+        min-height: 60vh;
         display: grid;
         grid-template-areas: 
         "none logo"
         "empecemos empecemos"
         ;  
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: 50% ;
         z-index: 1;
+
     }
+
+ 
+
     .head__box__nav{
     
         position:fixed;

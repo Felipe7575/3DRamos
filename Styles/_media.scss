@@ -11,6 +11,7 @@
 
    
     /* =========================BANER PARA TODAS LAS PAGINAS MENOS EL INDEX============================== */
+   
             .contenido_banner{
                 height: 50vh;
                 display: grid;
@@ -19,7 +20,7 @@
                 grid-template-areas: 
                 "sideBut logo"
                 "empecemos empecemos";
-                background-image: url(../assets/images/Banner.jpg);
+                background-image: url(../assets/images/Banner4-LOW.jpg);
                 background-repeat: none;
                 background-size: cover;
                 background-position: 57% 60%;
@@ -86,7 +87,10 @@
             }
     
     /* =========================HEAD UNICAMENTE PARA EL INDEX============================== */
+   
     .head--inicio{
+        background-image: url(../assets/images/BannerInicio-LOW.jpg);
+
         min-height: 60vh;
         display: grid;
         grid-template-areas: 

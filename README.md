@@ -16,7 +16,7 @@
  
     _var.scss:  Corresponde a variable que se utilizan en todas la paginas, principalmente los colores mas repetidos.
     
- ## Adjunto link a Drive donde se encuentran los sketch de este sitio:
+ ## Adjunto link a Drive donde se encuentran los sketch y presupuestos de este sitio:
     
     https://drive.google.com/drive/folders/1WWSN2aF_qn5bESicb5yvdvRfpb_rZyEl?usp=sharing
     

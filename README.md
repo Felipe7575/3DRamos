@@ -16,9 +16,10 @@
  
     _var.scss:  Corresponde a variable que se utilizan en todas la paginas, principalmente los colores mas repetidos.
     
- ## Dentro de la carpeta Sketchs se encuentran lo siguiente:
- 
-    Dentro de Sketch se encuentran los wireframes utilizados para realizar el html de las paginas
+ ## Adjunto link a Drive donde se encuentran los sketch de este sitio:
+    
+    https://drive.google.com/drive/folders/1WWSN2aF_qn5bESicb5yvdvRfpb_rZyEl?usp=sharing
+    
     
  
     
